@@ -41,7 +41,7 @@ feature scaling
 used when two variables have different scales
 will cause error in model due to euclidean distance
 the euclidean distance will be dominated by the one with 
-higher range. To avoid that, we either use
+higher range. To avoid that, you should either use
 normalisation or standardisation.'''
 
 from sklearn.preprocessing import StandardScaler
@@ -53,8 +53,8 @@ X_test = sc_X.transform(X_test)
 #scaling categorical data depends on dataset
 '''
 It depends on how much you wanna keep interpretation
-in your models because if we scale this, it will be good 
-because everything will be on the same scale,we will be happy with 
-that and it will be good for our predictions but we will lose the 
+in your models because if you scale this, it will be good 
+because everything will be on the same scale, and you will be happy with 
+that and it will be good for your predictions but you will lose the 
 interpretation of knowing which observations belongs to which country, et cetera.
 '''
